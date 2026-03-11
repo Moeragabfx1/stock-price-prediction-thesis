@@ -1,0 +1,231 @@
+stock,model,feature,importance,category
+TSLA,Random Forest,Close,0.8973176885020416,Price
+TSLA,Random Forest,Low,0.044954983057372486,Price
+TSLA,Random Forest,High,0.03801257383216602,Price
+TSLA,Random Forest,Open,0.003991033315462402,Price
+TSLA,Random Forest,SMA_200,0.0018388687169959446,Technical
+TSLA,Random Forest,MACD_Signal,0.0014655083115819403,Technical
+TSLA,Random Forest,MACD,0.0013875895487499106,Technical
+TSLA,Random Forest,BB_Width,0.001308170955785116,Technical
+TSLA,Random Forest,Returns_5d,0.0013041796019644036,Technical
+TSLA,Random Forest,Returns_1d,0.0012736914856992965,Technical
+TSLA,Random Forest,Volume,0.0012345296415207008,Price
+TSLA,Random Forest,Momentum_10,0.0010498932923034738,Technical
+TSLA,Random Forest,BB_Lower,0.0009050293370282723,Technical
+TSLA,Random Forest,RSI,0.0008767419117827904,Technical
+TSLA,Random Forest,BB_Upper,0.0007250099263960081,Technical
+TSLA,Random Forest,EMA_20,0.0006551857055162154,Technical
+TSLA,Random Forest,SMA_50,0.0006389785945538312,Technical
+TSLA,Random Forest,EMA_50,0.0005937650126712974,Technical
+TSLA,Random Forest,SMA_20,0.0004665792504081485,Technical
+TSLA,Random Forest,positive_score,0.0,Sentiment
+TSLA,Random Forest,negative_score,0.0,Sentiment
+TSLA,Random Forest,neutral_score,0.0,Sentiment
+TSLA,Random Forest,article_count,0.0,Sentiment
+TSLA,XGBoost,Close,0.8726112842559814,Price
+TSLA,XGBoost,Low,0.06978985667228699,Price
+TSLA,XGBoost,High,0.036959175020456314,Price
+TSLA,XGBoost,Open,0.004925069864839315,Price
+TSLA,XGBoost,BB_Upper,0.002045766217634082,Technical
+TSLA,XGBoost,SMA_200,0.001990663120523095,Technical
+TSLA,XGBoost,EMA_20,0.0013074579183012247,Technical
+TSLA,XGBoost,EMA_50,0.001162747386842966,Technical
+TSLA,XGBoost,MACD,0.0011404266115278006,Technical
+TSLA,XGBoost,BB_Lower,0.001073707826435566,Technical
+TSLA,XGBoost,BB_Width,0.0010643553687259555,Technical
+TSLA,XGBoost,Returns_5d,0.0009714430198073387,Technical
+TSLA,XGBoost,MACD_Signal,0.0008222023607231677,Technical
+TSLA,XGBoost,Momentum_10,0.0008007214055396616,Technical
+TSLA,XGBoost,RSI,0.0007979889051057398,Technical
+TSLA,XGBoost,Returns_1d,0.0007537003257311881,Technical
+TSLA,XGBoost,Volume,0.0006948186201043427,Price
+TSLA,XGBoost,SMA_50,0.0006771275075152516,Technical
+TSLA,XGBoost,SMA_20,0.0004115602932870388,Technical
+TSLA,XGBoost,positive_score,0.0,Sentiment
+TSLA,XGBoost,negative_score,0.0,Sentiment
+TSLA,XGBoost,neutral_score,0.0,Sentiment
+TSLA,XGBoost,article_count,0.0,Sentiment
+NVDA,Random Forest,Low,0.13020552845695307,Price
+NVDA,Random Forest,Close,0.12687082166039232,Price
+NVDA,Random Forest,SMA_50,0.10389190549449605,Technical
+NVDA,Random Forest,SMA_200,0.09511251823596227,Technical
+NVDA,Random Forest,EMA_50,0.09003215797547494,Technical
+NVDA,Random Forest,EMA_20,0.08985275006223384,Technical
+NVDA,Random Forest,SMA_20,0.08628788601669278,Technical
+NVDA,Random Forest,High,0.08100655190919318,Price
+NVDA,Random Forest,BB_Upper,0.08080209865048466,Technical
+NVDA,Random Forest,BB_Lower,0.06048582542984624,Technical
+NVDA,Random Forest,Open,0.05456952588862467,Price
+NVDA,Random Forest,BB_Width,0.00015810857283118362,Technical
+NVDA,Random Forest,Returns_1d,0.00013236120898258037,Technical
+NVDA,Random Forest,Volume,0.00012713410326923368,Price
+NVDA,Random Forest,Returns_5d,0.00010558613071077189,Technical
+NVDA,Random Forest,RSI,9.275234397533795e-05,Technical
+NVDA,Random Forest,MACD_Signal,9.026392738902552e-05,Technical
+NVDA,Random Forest,Momentum_10,8.877074412160241e-05,Technical
+NVDA,Random Forest,MACD,8.745318836624386e-05,Technical
+NVDA,Random Forest,positive_score,0.0,Sentiment
+NVDA,Random Forest,negative_score,0.0,Sentiment
+NVDA,Random Forest,neutral_score,0.0,Sentiment
+NVDA,Random Forest,article_count,0.0,Sentiment
+NVDA,XGBoost,SMA_20,0.6695594191551208,Technical
+NVDA,XGBoost,Close,0.23903220891952515,Price
+NVDA,XGBoost,Low,0.03933291509747505,Price
+NVDA,XGBoost,High,0.026780981570482254,Price
+NVDA,XGBoost,Open,0.018817991018295288,Price
+NVDA,XGBoost,BB_Lower,0.0024079305585473776,Technical
+NVDA,XGBoost,BB_Upper,0.001110974233597517,Technical
+NVDA,XGBoost,SMA_50,0.0010939911007881165,Technical
+NVDA,XGBoost,SMA_200,0.0009731937316246331,Technical
+NVDA,XGBoost,EMA_50,0.00034548292751424015,Technical
+NVDA,XGBoost,MACD,8.926681766752154e-05,Technical
+NVDA,XGBoost,BB_Width,7.810093666194007e-05,Technical
+NVDA,XGBoost,MACD_Signal,7.502861990360543e-05,Technical
+NVDA,XGBoost,Returns_1d,7.282676961040124e-05,Technical
+NVDA,XGBoost,Volume,7.204547728179023e-05,Price
+NVDA,XGBoost,Returns_5d,5.556916585192084e-05,Technical
+NVDA,XGBoost,Momentum_10,4.6500670578097925e-05,Technical
+NVDA,XGBoost,EMA_20,2.929116271843668e-05,Technical
+NVDA,XGBoost,RSI,2.624110311444383e-05,Technical
+NVDA,XGBoost,positive_score,0.0,Sentiment
+NVDA,XGBoost,negative_score,0.0,Sentiment
+NVDA,XGBoost,neutral_score,0.0,Sentiment
+NVDA,XGBoost,article_count,0.0,Sentiment
+META,Random Forest,Close,0.31448824876685577,Price
+META,Random Forest,Low,0.27198221684354645,Price
+META,Random Forest,High,0.14541852331261917,Price
+META,Random Forest,BB_Upper,0.10097448566743068,Technical
+META,Random Forest,Open,0.09708774442232813,Price
+META,Random Forest,EMA_20,0.04828386670456437,Technical
+META,Random Forest,SMA_50,0.006945179566078398,Technical
+META,Random Forest,EMA_50,0.005530369557026781,Technical
+META,Random Forest,SMA_200,0.004655221480935723,Technical
+META,Random Forest,BB_Lower,0.0021494409185200624,Technical
+META,Random Forest,SMA_20,0.0009362592063776182,Technical
+META,Random Forest,Momentum_10,0.00026081606021577294,Technical
+META,Random Forest,Volume,0.0002599350532314648,Price
+META,Random Forest,BB_Width,0.0002028573223801678,Technical
+META,Random Forest,Returns_5d,0.0001991373611737595,Technical
+META,Random Forest,RSI,0.00018592265793624315,Technical
+META,Random Forest,Returns_1d,0.0001737147241639974,Technical
+META,Random Forest,MACD_Signal,0.00016569433407286632,Technical
+META,Random Forest,MACD,0.000100366040542825,Technical
+META,Random Forest,positive_score,0.0,Sentiment
+META,Random Forest,negative_score,0.0,Sentiment
+META,Random Forest,neutral_score,0.0,Sentiment
+META,Random Forest,article_count,0.0,Sentiment
+META,XGBoost,High,0.627985417842865,Price
+META,XGBoost,Close,0.17158648371696472,Price
+META,XGBoost,Low,0.11253193765878677,Price
+META,XGBoost,Open,0.05510767921805382,Price
+META,XGBoost,SMA_50,0.023490041494369507,Technical
+META,XGBoost,BB_Upper,0.0033058940898627043,Technical
+META,XGBoost,BB_Lower,0.0018163666827604175,Technical
+META,XGBoost,SMA_20,0.0017179003916680813,Technical
+META,XGBoost,EMA_20,0.0009421108406968415,Technical
+META,XGBoost,SMA_200,0.00032335452851839364,Technical
+META,XGBoost,EMA_50,0.0003162063076160848,Technical
+META,XGBoost,Momentum_10,0.00015414149675052613,Technical
+META,XGBoost,Volume,0.00013909592234995216,Price
+META,XGBoost,Returns_5d,0.0001304210745729506,Technical
+META,XGBoost,Returns_1d,0.00010028294491348788,Technical
+META,XGBoost,BB_Width,9.878865967039019e-05,Technical
+META,XGBoost,MACD,9.367162419948727e-05,Technical
+META,XGBoost,RSI,8.051697659539059e-05,Technical
+META,XGBoost,MACD_Signal,7.978075154824182e-05,Technical
+META,XGBoost,positive_score,0.0,Sentiment
+META,XGBoost,negative_score,0.0,Sentiment
+META,XGBoost,neutral_score,0.0,Sentiment
+META,XGBoost,article_count,0.0,Sentiment
+AAPL,Random Forest,Close,0.6218120688962601,Price
+AAPL,Random Forest,Low,0.29290486070270455,Price
+AAPL,Random Forest,High,0.065165806241959,Price
+AAPL,Random Forest,Open,0.009638799347541267,Price
+AAPL,Random Forest,BB_Upper,0.0044778230454680405,Technical
+AAPL,Random Forest,EMA_20,0.0011168583858374953,Technical
+AAPL,Random Forest,MACD,0.0006647257529957904,Technical
+AAPL,Random Forest,SMA_200,0.0005903571732136704,Technical
+AAPL,Random Forest,Returns_1d,0.0005076278632440554,Technical
+AAPL,Random Forest,Volume,0.0004910869881925974,Price
+AAPL,Random Forest,BB_Width,0.0004219431274266947,Technical
+AAPL,Random Forest,Momentum_10,0.00035299084859603054,Technical
+AAPL,Random Forest,EMA_50,0.0003447346316749486,Technical
+AAPL,Random Forest,MACD_Signal,0.000340682859530233,Technical
+AAPL,Random Forest,Returns_5d,0.000309177450118529,Technical
+AAPL,Random Forest,RSI,0.00025352834850082384,Technical
+AAPL,Random Forest,BB_Lower,0.00023777734441354241,Technical
+AAPL,Random Forest,SMA_50,0.00018918915381662101,Technical
+AAPL,Random Forest,SMA_20,0.00017996183850606812,Technical
+AAPL,Random Forest,positive_score,0.0,Sentiment
+AAPL,Random Forest,negative_score,0.0,Sentiment
+AAPL,Random Forest,neutral_score,0.0,Sentiment
+AAPL,Random Forest,article_count,0.0,Sentiment
+AAPL,XGBoost,Low,0.6098648309707642,Price
+AAPL,XGBoost,Close,0.29359424114227295,Price
+AAPL,XGBoost,High,0.043185990303754807,Price
+AAPL,XGBoost,SMA_200,0.029617413878440857,Technical
+AAPL,XGBoost,Open,0.018744129687547684,Price
+AAPL,XGBoost,BB_Upper,0.0012783757410943508,Technical
+AAPL,XGBoost,BB_Lower,0.0007512558368034661,Technical
+AAPL,XGBoost,SMA_50,0.000392763817217201,Technical
+AAPL,XGBoost,EMA_50,0.0003072102554142475,Technical
+AAPL,XGBoost,Returns_1d,0.0002786616678349674,Technical
+AAPL,XGBoost,SMA_20,0.0002542849106248468,Technical
+AAPL,XGBoost,Momentum_10,0.0002537725667934865,Technical
+AAPL,XGBoost,MACD,0.00024983385810628533,Technical
+AAPL,XGBoost,RSI,0.00022112247825134546,Technical
+AAPL,XGBoost,EMA_20,0.00021969804947730154,Technical
+AAPL,XGBoost,MACD_Signal,0.00021844272851012647,Technical
+AAPL,XGBoost,BB_Width,0.0002099935954902321,Technical
+AAPL,XGBoost,Returns_5d,0.00018153975543100387,Technical
+AAPL,XGBoost,Volume,0.00017650309018790722,Price
+AAPL,XGBoost,positive_score,0.0,Sentiment
+AAPL,XGBoost,negative_score,0.0,Sentiment
+AAPL,XGBoost,neutral_score,0.0,Sentiment
+AAPL,XGBoost,article_count,0.0,Sentiment
+MSFT,Random Forest,Close,0.5283577927199793,Price
+MSFT,Random Forest,Low,0.2813891757551086,Price
+MSFT,Random Forest,High,0.08374905950324295,Price
+MSFT,Random Forest,SMA_200,0.06446078793127091,Technical
+MSFT,Random Forest,Open,0.031511474862104615,Price
+MSFT,Random Forest,EMA_20,0.0029007701533974375,Technical
+MSFT,Random Forest,SMA_20,0.001794496598363377,Technical
+MSFT,Random Forest,SMA_50,0.0012094302365543035,Technical
+MSFT,Random Forest,EMA_50,0.0012071500211128447,Technical
+MSFT,Random Forest,BB_Upper,0.0011266218856127207,Technical
+MSFT,Random Forest,Volume,0.0003268611920165106,Price
+MSFT,Random Forest,MACD,0.0003164285048571367,Technical
+MSFT,Random Forest,Momentum_10,0.0002818931320412143,Technical
+MSFT,Random Forest,Returns_5d,0.00026460457193324706,Technical
+MSFT,Random Forest,RSI,0.0002533607390544187,Technical
+MSFT,Random Forest,BB_Width,0.0002384630916005212,Technical
+MSFT,Random Forest,Returns_1d,0.00022813344644410382,Technical
+MSFT,Random Forest,MACD_Signal,0.00020941313324994483,Technical
+MSFT,Random Forest,BB_Lower,0.00017408252205575002,Technical
+MSFT,Random Forest,positive_score,0.0,Sentiment
+MSFT,Random Forest,negative_score,0.0,Sentiment
+MSFT,Random Forest,neutral_score,0.0,Sentiment
+MSFT,Random Forest,article_count,0.0,Sentiment
+MSFT,XGBoost,Close,0.6909825801849365,Price
+MSFT,XGBoost,Low,0.19779832661151886,Price
+MSFT,XGBoost,High,0.06447513401508331,Price
+MSFT,XGBoost,SMA_200,0.037233173847198486,Technical
+MSFT,XGBoost,Open,0.005466155242174864,Price
+MSFT,XGBoost,SMA_50,0.0011498412350192666,Technical
+MSFT,XGBoost,BB_Lower,0.0006184436497278512,Technical
+MSFT,XGBoost,SMA_20,0.00034104788210242987,Technical
+MSFT,XGBoost,BB_Upper,0.0002850739110726863,Technical
+MSFT,XGBoost,EMA_20,0.000221028269152157,Technical
+MSFT,XGBoost,EMA_50,0.00022083584917709231,Technical
+MSFT,XGBoost,Momentum_10,0.00020424275135155767,Technical
+MSFT,XGBoost,Returns_1d,0.00017719760944601148,Technical
+MSFT,XGBoost,Returns_5d,0.00015092761896084994,Technical
+MSFT,XGBoost,RSI,0.0001432564458809793,Technical
+MSFT,XGBoost,MACD_Signal,0.00014131008356343955,Technical
+MSFT,XGBoost,BB_Width,0.00013983805547468364,Technical
+MSFT,XGBoost,MACD,0.0001318165595876053,Technical
+MSFT,XGBoost,Volume,0.00011972648644587025,Price
+MSFT,XGBoost,positive_score,0.0,Sentiment
+MSFT,XGBoost,negative_score,0.0,Sentiment
+MSFT,XGBoost,neutral_score,0.0,Sentiment
+MSFT,XGBoost,article_count,0.0,Sentiment

@@ -105,7 +105,7 @@ Based on the literature review, the following key insights emerge:
 - Different model complexities (LogReg vs XGBoost vs LSTM) when using the same feature set
 - Multiple stocks from the same sector (tech stocks) to assess generalization
 
-This thesis aims to address these gaps by systematically comparing models with and without sentiment features across 5 major tech stocks (TSLA, NVDA, META, AAPL, MSFT).
+This thesis aims to address these gaps by systematically comparing models with and without sentiment features across 9 major stocks and indices (TSLA, NVDA, META, AAPL, MSFT, GOOGL, AMZN, SPY, QQQ).
 
 ---
 
