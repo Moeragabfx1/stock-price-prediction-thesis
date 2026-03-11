@@ -83,3 +83,4 @@ This study finds that simpler linear models are more robust than more complex en
 2. Update proposal/thesis framing so RQ3 is honest
 3. Emphasize robustness over hype
 4. Present sentiment as tested but weak, not assumed beneficial
+5. Build feature-importance findings into a formal academic analysis section (see `FEATURE_ANALYSIS.md`)
