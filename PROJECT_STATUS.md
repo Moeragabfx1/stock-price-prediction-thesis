@@ -85,3 +85,4 @@ This study finds that simpler linear models are more robust than more complex en
 4. Present sentiment as tested but weak, not assumed beneficial
 5. Build feature-importance findings into a formal academic analysis section (see `FEATURE_ANALYSIS.md`)
 6. Convert the current direction into a proposal-ready structure (see `PROPOSAL_OUTLINE.md`)
+7. Draft Chapter 3 in full academic prose (see `METHODOLOGY_DRAFT.md`)
