@@ -1,10 +1,10 @@
 # Proposal Direction
 
 ## Working Title
-**Stock Price Prediction Using Technical Indicators and News Sentiment: A Comparative Study Across 9 Stocks and Indices**
+**Evaluating the Incremental Predictive Value of Technical Indicators and News Sentiment for Next-Day Stock Price Forecasting: Evidence from Nine US Stocks and Indices**
 
 ## Core Research Question
-Can machine learning models predict next-day stock prices using technical indicators, and does adding news sentiment improve predictive performance compared with technical indicators alone?
+Do technical indicators and news sentiment provide incremental predictive value over simple baselines for next-day stock price forecasting across selected US stocks and indices?
 
 ## Refined Position
 This thesis does **not** assume sentiment will help. It tests whether sentiment adds incremental predictive value under realistic data constraints.
