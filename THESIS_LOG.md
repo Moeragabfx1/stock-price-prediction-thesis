@@ -44,97 +44,111 @@
 
 ### Step 2.1: Stock Price Data
 - **Date:** 2026-03-11
-- **Source:** Yahoo Finance (yfinance)
+- **Source:** Yahoo Finance (`yfinance`)
 - **Stocks:** TSLA, NVDA, META, AAPL, MSFT, GOOGL, AMZN, SPY, QQQ
-- **Time Range:** 2020-01-02 to 2026-02-27
-- **Records:** 1,547 days × 5 stocks = 7,735 total records
+- **Time Range:** 2020-01 to 2026-03
+- **Records:** ~1,547 to 1,554 daily rows per ticker
 - **Columns:** Open, High, Low, Close, Volume
-- **Data Quality:** No missing values
+- **Data Quality:** No duplicate rows, no zero prices, no zero volumes
 
 ### Step 2.2: News Data
 - **Date:** 2026-03-11
-- **Initial Attempt:** NewsAPI.io (failed - free tier only allows past month)
-- **Alternative Source:** GDELT + web search
-- **Total Articles:** 3,075
-
-| Stock | Articles |
-|-------|----------|
-| TSLA | 178 |
-| NVDA | 735 |
-| META | 798 |
-| AAPL | 645 |
-| MSFT | 719 |
-
-- **Limitation:** NewsAPI free tier restricts historical data. GDELT provides partial coverage.
-- **Lesson Learned:** For full historical coverage, consider paid NewsAPI ($75/month) or Bloomberg/Reuters.
+- **Attempted Sources:** NewsAPI, GDELT, Yahoo/yfinance, web search
+- **Outcome:** Built uneven but usable sentiment coverage across all 9 tickers
+- **Current sentiment coverage days:**
+  - TSLA: 2
+  - NVDA: 10
+  - META: 28
+  - AAPL: 25
+  - MSFT: 20
+  - GOOGL: 21
+  - AMZN: 21
+  - SPY: 22
+  - QQQ: 33
+- **Key limitation:** sentiment coverage is short-window and inconsistent across tickers
 
 ### Step 2.3: Cron Job Setup
 - **Date:** 2026-03-11
-- **Job:** Weekly news scan (Every Wednesday 8 AM ICT)
-- **Purpose:** Keep news data updated for thesis
+- **Job:** Weekly literature search cron (Sunday 10 AM ICT)
+- **Purpose:** Expand academic references for thesis writing
 
 ---
 
-## Phase 3: Feature Engineering (In Progress)
+## Phase 3: Feature Engineering (Completed)
 
 ### Step 3.1: Technical Indicators
-- **To Do:** Calculate RSI, MACD, Moving Averages, Bollinger Bands
-- **Tools:** pandas-ta library
+- **Completed:** RSI_14, MACD, SMA_20/50/200, EMA_20/50, Bollinger Bands, Momentum_10, Returns_1d/5d, ATR_14
+- **Note:** missing early rows are expected due to rolling-window lookback periods
 
 ### Step 3.2: Sentiment Analysis
-- **To Do:** Run FinBERT on all 3,075 news articles
-- **Model:** ProsusAI/finbert (HuggingFace)
-- **Classes:** positive, negative, neutral
+- **Completed:** Daily sentiment scoring pipeline built and rerun for all 9 tickers
+- **Final approach:** VADER-based sentiment scoring with title+description aggregation
+- **Cleaning applied:** junk filtering, date normalization, daily aggregation
+- **Important revision:** initial FinBERT plan was dropped because the host environment lacked the required transformer stack and the lighter pipeline was more reproducible for this project
 
 ### Step 3.3: Feature Combination
-- **To Do:** Merge technical indicators + daily sentiment scores
+- **Completed:** Technical indicators merged with daily sentiment signals per ticker
+- **Fallback logic:** missing sentiment days filled neutrally to preserve aligned stock timelines
 
 ---
 
-## Phase 4: Model Building (Pending)
+## Phase 4: Model Building (Completed - Initial Experimental Round)
 
-### Models to Compare:
-1. **Baseline:** Linear Regression (technical indicators only)
-2. **Model A:** XGBoost (technical indicators only)
-3. **Model B:** Random Forest (technical + sentiment)
-4. **Model C:** LSTM (if time permits)
+### Models Compared:
+1. **Linear Regression**
+2. **Random Forest**
+3. **XGBoost**
+
+### Evaluation Design:
+- Standard train/test split
+- Baseline comparison (naive, buy-and-hold)
+- Walk-forward validation
 
 ### Evaluation Metrics:
-- RMSE (Root Mean Square Error)
-- MAE (Mean Absolute Error)
-- R² (Coefficient of Determination)
+- RMSE
+- MAE
+- Directional Accuracy
 
+### Current Result Summary:
+- **Best overall model:** Linear Regression
+- **Complex models:** Random Forest and XGBoost generally overfit
+- **Sentiment effect:** negligible under current coverage and setup
+- **Naive baseline:** still difficult to beat consistently, which is realistic in financial prediction
 ---
 
 ## Key Decisions & Rationale
 
 | Decision | Rationale |
 |----------|-----------|
-| 5 Tech Stocks | High volume, well-documented, good for comparison |
+| 9 stocks + indices | Improves generalization beyond the original 5-stock design |
 | 1-Day Prediction | Manageable scope for 3-month thesis |
-| FinBERT | Proven performance on financial text |
-| Compare Tech-only vs Tech+Sentiment | Answer the core research question |
+| Walk-forward validation | More rigorous and academically defensible than a simple split |
+| Linear Regression kept as primary benchmark | Most robust model in actual experiments |
+| Compare Tech-only vs Tech+Sentiment | Directly answers the core research question |
+| Use lightweight reproducible sentiment pipeline | Practical and repeatable within environment constraints |
 
 ---
 
 ## Known Limitations
 
-1. **News Data:** Historical news limited by API restrictions
-2. **Time Range:** Stock data starts 2020 (not 2015-2020)
-3. **Single Sector:** All tech stocks (generalization limited)
+1. **Sentiment coverage:** short-window and uneven across tickers
+2. **News quality:** mixed source quality due free-source constraints
+3. **Time Range:** market data begins in 2020
+4. **Domain scope:** emphasis remains on large-cap tech stocks plus two US indices
+5. **Predictive ceiling:** naive baseline remains hard to beat consistently
 
 ---
 
 ## Next Steps
 
-1. [ ] Run FinBERT sentiment analysis on news
-2. [ ] Calculate technical indicators
-3. [ ] Build and train models
-4. [ ] Compare results
-5. [ ] Write methodology chapter
-6. [ ] Write results chapter
+1. [ ] Update proposal / thesis outline to reflect the real 9-stock results
+2. [ ] Rewrite literature review summary so it matches findings, not hopes
+3. [ ] Strengthen critical analysis section around why sentiment underperformed
+4. [ ] Expand academic references toward 30+
+5. [ ] Draft methodology chapter
+6. [ ] Draft results chapter
 
 ---
 
 *Log started: 2026-03-11*
-*Last updated: 2026-03-11 14:48 ICT*
+*Last updated: 2026-03-11 14:50 ICT*

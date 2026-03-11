@@ -66,7 +66,7 @@ This finding is particularly valuable for our thesis as it provides evidence tha
 
 ### 2.6 Multi-Stock and Multi-Sector Approaches
 
-Several studies have explored predicting stock prices across multiple stocks and sectors, which aligns with our thesis approach of using 5 major tech stocks.
+Several studies have explored predicting stock prices across multiple stocks and sectors, which aligns with our thesis approach of using 9 major stocks and indices.
 
 **Key Paper 4: Neural Network Fundamental+Technical+Sentiment (2025)**
 - Authors: Research team (Computational Economics)
@@ -94,18 +94,21 @@ Several studies have explored predicting stock prices across multiple stocks and
 
 Based on the literature review, the following key insights emerge:
 
-1. **Sentiment analysis adds value**: Combining sentiment with traditional features improves prediction accuracy across multiple studies
-2. **Simpler models can outperform**: Logistic Regression achieved 81.83% accuracy, outperforming FinBERT and GPT-4
-3. **Technical indicators have limitations**: Studies show overfitting issues with technical indicators alone
-4. **Multi-stock approaches are viable**: Studies across 33 stocks and 11 sectors show consistent value from sentiment
-5. **Hybrid fusion works**: Combining technical and sentiment features outperforms either alone
+1. **Sentiment analysis often adds value in prior studies**: Many published papers report gains from combining sentiment with price-based features
+2. **Simpler models can outperform**: Logistic Regression and other interpretable models can beat more complex approaches in some settings
+3. **Technical indicators have limitations**: Studies repeatedly warn about overfitting and weak out-of-sample generalization
+4. **Context matters**: The value of sentiment depends heavily on source quality, coverage, timing, and preprocessing design
+5. **Hybrid fusion is promising but not guaranteed**: Reported gains in the literature do not automatically transfer across datasets or market settings
 
-**Research Gap:** While previous studies have shown the value of combining sentiment and technical indicators, there is limited research comparing:
-- The incremental value of adding sentiment to technical-indicator-only models
-- Different model complexities (LogReg vs XGBoost vs LSTM) when using the same feature set
-- Multiple stocks from the same sector (tech stocks) to assess generalization
+**Research Gap:** While previous studies frequently report benefits from sentiment-enhanced prediction, there is still limited work testing whether those gains remain when:
+- sentiment coverage is noisy, partial, or operationally constrained
+- simple baselines are compared rigorously against more complex models
+- walk-forward validation is used instead of a single train/test split
+- multiple large-cap technology stocks and benchmark indices are evaluated together
 
-This thesis aims to address these gaps by systematically comparing models with and without sentiment features across 9 major stocks and indices (TSLA, NVDA, META, AAPL, MSFT, GOOGL, AMZN, SPY, QQQ).
+This thesis addresses these gaps by systematically comparing technical-only and technical-plus-sentiment models across 9 major stocks and indices (TSLA, NVDA, META, AAPL, MSFT, GOOGL, AMZN, SPY, QQQ), using baseline comparison and walk-forward validation.
+
+**Current empirical direction of this thesis:** the literature motivated the inclusion of sentiment, but the experimental results so far suggest that sentiment contributes little incremental predictive value in the current setup, while simpler linear models remain more robust than Random Forest and XGBoost. This negative-or-limited result is still academically valuable because it tests whether reported gains in prior work hold under more constrained and realistic conditions.
 
 ---
 
