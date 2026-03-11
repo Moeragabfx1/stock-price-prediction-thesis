@@ -86,3 +86,4 @@ This study finds that simpler linear models are more robust than more complex en
 5. Build feature-importance findings into a formal academic analysis section (see `FEATURE_ANALYSIS.md`)
 6. Convert the current direction into a proposal-ready structure (see `PROPOSAL_OUTLINE.md`)
 7. Draft Chapter 3 in full academic prose (see `METHODOLOGY_DRAFT.md`)
+8. Draft Chapter 1 in full academic prose with explicit links to RQs, hypotheses, and chapter flow (see `INTRODUCTION_DRAFT.md`)
