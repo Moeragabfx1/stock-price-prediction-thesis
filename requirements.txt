@@ -1,0 +1,26 @@
+# Data Science Master's Thesis - Stock Price Prediction
+# Requirements for Python Environment
+
+# Core Data Science
+pandas>=2.0.0
+numpy>=1.24.0
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Data Acquisition
+yfinance>=0.2.28
+
+# Machine Learning
+scikit-learn>=1.3.0
+xgboost>=2.0.0
+
+# Technical Analysis
+pandas-ta>=0.3.14b
+
+# Jupyter
+jupyter>=1.0.0
+ipykernel>=6.25.0
+
+# Utilities
+tqdm>=4.66.0
+requests>=2.31.0
