@@ -35,7 +35,7 @@ def _load_indicator_df(stock):
     if 'Date' not in df.columns:
         first_col = df.columns[0]
         df = df.rename(columns={first_col: 'Date'})
-    df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
+    df['Date'] = pd.to_datetime(df['Date'], errors='coerce', utc=True).dt.tz_localize(None)
     return df
 
 def _load_sentiment_df(stock):
@@ -44,12 +44,12 @@ def _load_sentiment_df(stock):
         sen_df = pd.read_csv(path)
         if 'Date' not in sen_df.columns:
             if 'date' in sen_df.columns:
-                sen_df['Date'] = pd.to_datetime(sen_df['date'], errors='coerce')
+                sen_df['Date'] = pd.to_datetime(sen_df['date'], errors='coerce', utc=True).dt.tz_localize(None)
                 sen_df = sen_df.drop(columns=['date'])
             else:
                 first_col = sen_df.columns[0]
                 sen_df = sen_df.rename(columns={first_col: 'Date'})
-                sen_df['Date'] = pd.to_datetime(sen_df['Date'], errors='coerce')
+                sen_df['Date'] = pd.to_datetime(sen_df['Date'], errors='coerce', utc=True).dt.tz_localize(None)
     else:
         sen_df = pd.DataFrame({'Date': []})
 
